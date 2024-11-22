@@ -11,7 +11,7 @@ SRC="$ROOT/src"
 OUT="$ROOT/out"
 PROJ_OUT="$OUT/linux/Packaging.Linux"
 INSTALLER_SRC="$SRC/osx/Installer.Mac"
-
+echo $@
 # Parse script arguments
 for i in "$@"
 do
@@ -41,7 +41,7 @@ case "$i" in
     ;;
 esac
 done
-
+RUNTIME="linux-arm64"
 # Perform pre-execution checks
 CONFIGURATION="${CONFIGURATION:=Debug}"
 if [ -z "$VERSION" ]; then

@@ -1,5 +1,7 @@
 # Git Credential Manager
 
+dotnet build -c LinuxRelease -v detailed
+
 [![Build Status][build-status-badge]][workflow-status]
 
 ---
